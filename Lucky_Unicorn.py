@@ -1,5 +1,5 @@
 import random
-tokens=["horse","donkey","unicorn","zebra"]
+tokens = ["horse", "donkey", "unicorn", "zebra"]
 
 
 def win_syst(x):
@@ -23,8 +23,6 @@ def win_syst(x):
         x = x - 1
         print("Now your balance is $" + str(x))
 
-
-
 def test():
     try:
         print(" ")
@@ -42,12 +40,4 @@ def test():
         print("Please write an integer")
         test()
 
-
-
 test()
-
-
-
-
-    
-    
