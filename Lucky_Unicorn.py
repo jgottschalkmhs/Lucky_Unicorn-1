@@ -1,6 +1,31 @@
 import random
 tokens = ["horse", "donkey", "unicorn", "zebra"]
 
+def end(a):
+    if a>=1:
+        finish = str(input("Press C to continue or any other key to quit "))
+        if finish == "c":
+            b=1
+            try:
+                b = int(input("How much do you want to add to your balance? "))
+                while b > 10 or b < 0:
+                    print("You cant add less than $0 or more than $10")
+                    b = int(input("How much do you want to add to your balance? "))
+                else:
+                    a = a + b
+                    print("Your balance is $" + str(a))
+                    a = int(a)
+                    print("Ok, lets continue!")
+                    win_syst(a)
+            except:
+                print("Please write an integer")
+        else:
+            print("Thank you for playing!")
+            print("Your balance is $" + str(a))
+
+    else:
+        print("Sorry, you have no money")
+
 
 def win_syst(x):
     token_choice = random.choice(tokens)
@@ -22,11 +47,13 @@ def win_syst(x):
         print("Sorry, you lost $1")
         x = x - 1
         print("Now your balance is $" + str(x))
+    end(x)
+
 
 def test():
     try:
         print(" ")
-        am_money =int(input("how much money do you want to play with? "))
+        am_money = int(input("how much money do you want to play with? "))
         while am_money > 10 or am_money < 1:
             print("You can't play with less then $1 or more than $10")
             print(" ")
