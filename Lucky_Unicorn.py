@@ -1,4 +1,8 @@
 import random
+print("Hello, welcome to the 'Lucky Unicorn' game. Here you can have one of 4 randomly generated tokens: ")
+print("unicorn, horse, zebra or donkey and you can win $5, lose 50c or lose $1 respectively.")
+print("This game is for raising money for the charity 'Doctors without Borders'.")
+print("You should give some money to play with and you can't play with more than $10, because we don't want you to lose a lot of money")
 tokens = ["horse", "donkey", "unicorn", "zebra"]
 
 def end(a):
