@@ -23,7 +23,7 @@ def end(a, d):
 def win_syst(x):
     token_choice = random.choice(tokens)        # randomly choosing a token from our list
     print("Your token is " + token_choice)
-    if token_choice == "unicorn":               # if the token is unicorn adding $5 to the total amount
+    if token_choice == "unicorn":               # if the token is unicorn add $5 to the total amount
         print(" ")
         print("Congratulations, you won $5!")
         x = x + 5
